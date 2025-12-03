@@ -1,0 +1,90 @@
+﻿
+<!DOCTYPE html>
+
+<!-- J'ai éssayé de m'inspirer de l'interface aqua de MacOS X pour ce site web -->
+
+<!-- sur cette page, la barre latérale (qui était une conséquence du lecteur audio tout en bas) n'apparait pas à cause de la galerie d'image, 
+je n'ai pas vraiment trouvé de solution à cela (j'ai bien éssayé d'allonger le "global" sauf que cela cachait les liens présents sur le côté gauche) mais j'imagine que ce problème
+à un lien avec le chevauchement de la galerie sur d'autres éléments du fond (PS: au final le problème semble s'être réglé tout seul) -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- titre/icone affichés sur l'onglet, style css et viewport pour l'adaptation de l'interface sur différents appareils -->
+<head>
+    <meta charset="utf-8" />
+    <title>Demos</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <link rel="icon" href="images/icon.ico"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<!-- corp de la page -->
+<body>
+
+
+<div id="global">
+
+    <!-- titre principal avec image en arrière plan (voir style.css pour voir l'image sous #title)-->
+    <div id="title">
+        <h1>Demonstrations</h1>
+    </div>
+    
+    <!-- liste de liens vers les autres pages -->
+    <div id="choixpages"> 
+      <ul id="pages">  
+        <li><a href="index.html">Page d'accueil</a></li>
+        <li><a href="Histoire.html">Son histoire</a></li>
+        <li><a href="Caracteristiques.html">Ses caractéristiques</a></li>
+        <li><a href="Usages.html">Ses usages</a></li>
+        <li><a href="Demo.html" id="activepage">Démonstrations</a></li> 
+        <li><a href="References.html">Sources et mentions</a></li>
+      </ul>
+	</div> 
+    
+    <!-- contenu principal de la page -->
+    <div id="main"> 
+        <p>Sur cette page, vous pouvez profiter de vidéos montrant certains vehicules dotés de moteur Wankel en marche (à gauche) comparés à d'autres véhicules dotés de moteurs plus conventionnels (à droite)</p>
+        
+        <br/>
+        <!-- intégration des vidéos par un lien Viméo -->
+        <div id="wankelvideos">
+            <iframe src="https://player.vimeo.com/video/1143194460?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="mazda cosmo"></iframe>
+            <p>Mazda Cosmo (1967) | 1.0L Wankel 110ch</p>
+            <br/>
+            <iframe src="https://player.vimeo.com/video/1143194372?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Hirochi rush"></iframe>
+            <p>Vehicule fictif | 1.2L Turbo Wankel 136ch</p>
+            <br/>
+            <iframe src="https://player.vimeo.com/video/1143194527?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Ibishu Zenith"></iframe>
+            <p>Autre vehicule fictif | 1.3L Twin-Turbo Wankel 233ch</p>
+        </div>
+
+        <div id="pistonsvideos">
+            <iframe src="https://player.vimeo.com/video/1143194610?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="peugeot 205"></iframe>
+            <p>Peugeot 205 rallye (1988) | 1.3L 4-cylindres 103ch</p>
+            <br/>
+            <iframe src="https://player.vimeo.com/video/1143194677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Cherrier Vivace"></iframe>
+            <p>Vehicule fictif | 1.2L Turbo 3-cylindres 110ch</p>
+            <br/>
+            <iframe src="https://player.vimeo.com/video/1143194288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Honda city"></iframe>
+            <p>Honda City Turbo II | 1.2L Turbo 4-cylindres 110ch</p>
+        </div>
+       
+    </div>
+    
+    <!-- musique d'arrière plan avec petite interface et bouttons-->
+    <div id="backgroundmusic"> 
+        <audio id="music" loop controls>
+            <source src="audio/Local Forecast.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+
+</div>
+    
+
+</body>
+</html>
