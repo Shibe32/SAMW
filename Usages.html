@@ -1,0 +1,84 @@
+﻿
+<!DOCTYPE html>
+
+<!-- J'ai éssayé de m'inspirer de l'interface aqua de MacOS X pour ce site web -->
+
+<!-- sur cette page, la barre latérale (qui était une conséquence du lecteur audio tout en bas) n'apparait pas à cause de la galerie d'image, 
+je n'ai pas vraiment trouvé de solution à cela (j'ai bien éssayé d'allonger le "global" sauf que cela cachait les liens présents sur le côté gauche) mais j'imagine que ce problème
+à un lien avec le chevauchement de la galerie sur d'autres éléments du fond (PS: au final le problème semble s'être réglé tout seul) -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- titre/icone affichés sur l'onglet, style css et viewport pour l'adaptation de l'interface sur différents appareils -->
+<head>
+    <meta charset="utf-8" />
+    <title>Usages du moteur Wankel</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <link rel="icon" href="images/icon.ico"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<!-- corp de la page -->
+<body>
+
+
+<div id="global">
+
+    <!-- titre principal avec image en arrière plan (voir style.css pour voir l'image sous #title)-->
+    <div id="title">
+        <h1>Ses usages</h1>
+    </div>
+    
+    <!-- liste de liens vers les autres pages -->
+    <div id="choixpages"> 
+      <ul id="pages">  
+        <li><a href="index.html">Page d'accueil</a></li>
+        <li><a href="Histoire.html">Son histoire</a></li>
+        <li><a href="Caracteristiques.html">Ses caractéristiques</a></li>
+        <li><a href="Usages.html" id="activepage">Ses usages</a></li>
+        <li><a href="Demo.html">Démonstrations</a></li>
+        <li><a href="References.html">Sources et mentions</a></li>
+      </ul>
+	</div> 
+    
+    <!-- contenu principal de la page -->
+    <div id="main"> 
+        <p>Le moteur Wankel a surtout été utilisé sur des voitures sportives et/ou haut de gamme et motos même si il y a eu des exceptions comme vous pouvez le voir sur cette liste non exhaustive. (survolez les images pour connaitre leur nom)</p>
+        
+        <div id="galery">
+                <img src="images/NSU-Spider.jpg" alt="(1963) NSU Spider" title="(1963) NSU Spider / 0.5L 50ch / 155km/h"/>
+                <img src="images/Mazda-cosmo.jpg" alt="(1967) Mazda cosmo" title="(1967) Mazda cosmo / 1.0L 110ch / 185km/h"/>
+                <img src="images/NSU-Ro80.jpg" alt="(1967) NSU Ro80" title="(1967) NSU Ro80 / 1.0L 115ch / 180km/h"/>
+                <img src="images/citroen-m35.JPG" alt="(1969) Citroën M35" title="(1969) Citroën M35 prototype / 0.5L 50ch / 140km/h"/>
+                <img src="images/citroen-gs-bi-rotor.jpg" alt="(1973) Citroën GS Birotor" title="(1973) Citroën GS Birotor / 1.0L 107ch / 175km/h"/>
+                <img src="images/Mazda-parkway.png" alt="(1974) Mazda Parkway 26 Rotary" title="(1974) Mazda Parkway 26 Rotary / 1.3L 135ch / 120km/h"/>
+                <img src="images/Suzuki-RE5.jpg" alt="(1974) Suzuki RE5" title="(1974) Suzuki RE5 / 0.5L 61ch / 170km/h"/>
+                <img src="images/Mercedes-C111.png" alt="(1970) Mercedes C111" title="(1970) Mercedes C111 prototype / 4.8L 350ch / 300km/h"/>
+                <img src="images/Mazda-RX7-1.png" alt="(1978) Mazda RX-7" title="(1978) Mazda RX-7 / 1.2L 100-165ch / 190-220km/h"/>
+                <img src="images/VAZ-2106.jpg" alt="(1980) VAZ-2106" title="(1980) VAZ-2106 vehicule du KGB / 1.3L 120ch / 180km/h"/>
+                <img src="images/Mazda-787B.jpg" alt="(1991) Mazda 787B" title="(1991) Mazda 787B / 2.6L 700ch / 366km/h"/>
+                <img src="images/Mazda-RX7-3.jpg" alt="(1992) Mazda RX-7" title="(1992) Mazda RX-7 / 1.3L 255-280ch / 250km/h"/>
+                <img src="images/Mazda-RX8.jpg" alt="(2003) Mazda RX-8" title="(2003) Mazda RX-8 1.3L / 192-231ch / 224-239km/h"/>
+                <img src="images/Mazda-furai.JPG" alt="(2008) Mazda Furai" title="(2008) Mazda Furai concept car / 2.0L 450ch / 325km/h"/>
+                <img src="images/Mazda-MX30.png" alt="(2022) Mazda MX-30" title="(2022) Mazda MX-30 R-EV / 1.5L (moteur alternatif) hybride et 1-rotor de 0.8L en tant que prolongateur d'autonomie / 145ch et 70ch pour le rotatif / 180km/h"/>  
+        </div>
+       
+    </div>
+    
+    <!-- musique d'arrière plan avec petite interface et bouttons-->
+    <div id="backgroundmusic"> 
+        <audio id="music" loop controls>
+            <source src="audio/Local Forecast.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+
+</div>
+    
+
+</body>
+</html>

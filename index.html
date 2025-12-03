@@ -1,0 +1,73 @@
+﻿
+<!DOCTYPE html>
+
+<!-- J'ai éssayé de m'inspirer de l'interface aqua de MacOS X pour ce site web -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- titre/icone affichés sur l'onglet, style css et viewport pour l'adaptation de l'interface sur différents appareils -->
+<head>
+    <meta charset="utf-8" />
+    <!-- titre de l'onglet -->
+    <title>Page d'accueil du SAMW</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- icone sur l'onglet -->
+    <link rel="icon" href="images/icon.ico"/>
+    
+    <!-- viewport pour permettre un meilleur affichage sur mobile en permettant de scroller sur la page au lieu que cette derniere s'affiche en entier sur un petit écran  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<!-- corp de la page -->
+<body>
+
+    <div id="global">
+
+        <!-- titre principal avec image en arrière plan (voir style.css pour voir l'image sous #title)-->
+        <div id="title">
+            <h1>Bienvenue sur le site web des adorateurs du moteur Wankel !</h1>
+        </div>
+
+        <!-- contenu principal de la page -->
+        <div id="mainsmall">
+            <p>Ici, on aime le moteur rotatif. Ce site web lui est donc dédié et sont à vôtre disposition plusieurs pages vous permettant d'en apprendre plus sur ce chef d'oeuvre d'ingénierie.</p>
+
+            <p>N'hésitez pas à activer la musique d'ambiance en bas de page. Faites comme chez vous.</p>
+
+            <!-- un peu de déco ne ferait pas de mal -->
+            <img id="couch" src="images/couch.png" title="allez y, asseyez vous.">
+
+            <img id="table" src="images/table.png" title="Prenez un verre.">
+
+            <img id="fireplace" src="images/fireplace.png" title="Profitez de la chaleur du feu.">
+        </div>
+
+        <!-- liste de liens vers les autres pages -->
+        <div id="choixpages">
+            <ul id="pages">
+                <li><a href="index.html" id="activepage">Page d'accueil</a></li>  <!-- J'ai voulu mettre en surbrillance le lien de la page actuelle donc je lui ai donné un autre ID pour lui donner les caractéristiques voulues -->
+                <li><a href="Histoire.html">Son histoire</a></li>
+                <li><a href="Caracteristiques.html">Ses caractéristiques</a></li>
+                <li><a href="Usages.html">Ses usages</a></li>
+                <li><a href="Demo.html">Démonstrations</a></li>
+                <li><a href="References.html">Sources et mentions</a></li>
+            </ul>
+        </div>
+
+        <!-- musique d'arrière plan avec petite interface et bouttons-->
+        <div id="backgroundmusic">
+            <audio id="music" loop controls>
+                <source src="audio/Local Forecast.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+</html>

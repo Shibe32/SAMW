@@ -1,0 +1,233 @@
+
+
+body, div, ul { 
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  background-color: #F5F5F5;  
+  font-family: Arial, sans-serif;  font-size: 13px;
+  box-sizing:border-box;
+  background-image: url(images/main-background.jpg);
+  /* effet de scrolling avec image d'arrière plan fixe */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* L'ensemble de la page est fixé et centré */
+#global { 
+  width: 1280px; 
+  margin: 0 auto;  
+  background-color: rgb(207, 201, 201); 
+  background-size: 1280px 1330px; /* essai de création d'une boite grise pour remplir le vide sur Usages.html*/
+  position: relative;
+  z-index: 1;
+}
+
+/* arrière plan du titre (juste un dégradé réalisé sur paint.net) */          
+#title {
+  background-image: url(images/title-bar.png); 
+  background-position: right, bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:rgb(71, 71, 73);
+  font-size: larger;
+}
+
+/* arrière plan et police du contenu principal (texture de tissu) */
+#main {
+  background-image: url(images/background.png); 
+  position: relative;
+  background-size: 1130px 1700px; 
+  background-position: right, bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding-left: 29px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.738);
+  font-size: Large;
+}
+
+/* arrière plan et police du contenu principal de la page Accueil et des mentions qui ne nécéssitent pas une grande page */
+#mainsmall {
+  background-image: url(images/background.png); 
+  position: relative;
+  background-size: 1130px 1600px; 
+  background-position: right, bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding-left: 29px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.738);
+  font-size: Large;
+}
+
+/* arrière plan et police du contenu principal de la page Caracteristiques plus longue */
+#mainlong {
+  background-image: url(images/background.png); 
+  position: relative;
+  background-size: 1130px 1800px; 
+  background-position: right, bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding-left: 29px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.738);
+  font-size: Large;
+}
+
+/* contenu principal */
+#main { 
+  width: 1089px; 
+  height: 1400px;
+  float: right;
+  padding: 10px;  
+  padding-left: 29px;
+  background-color: white; 
+}
+
+/* contenu principal de la page Accueil et Mentions plus courtes */
+#mainsmall { 
+  width: 1090px; 
+  height: 700px;
+  float: right;
+  padding: 10px;  
+  padding-left: 29px;
+  background-color: white; 
+}
+
+/* contenu principal de la page Caracteristiques */
+#mainlong { 
+  width: 1090px; 
+  height: 1780px;
+  float: right;
+  padding: 10px;  
+  padding-left: 29px;
+  background-color: white; 
+}
+
+/* Colonne de gauche, contenant le menu */
+#choixpages { 
+  width: 150px; 
+  float: left; 
+  position: relative;
+}
+        
+/* Détails des liens rgb(171, 165, 165); */
+#pages li {
+    list-style-type: none;
+    background-color: rgb(207, 201, 201);
+    border-bottom: 1px solid #808080;
+}
+
+#pages li a, #menu li a:visited {
+  display: block; 
+  padding: 10px; 
+  font-size: 14px;
+  text-decoration: none; 
+  color: rgb(71, 71, 73); 
+}
+
+#pages li a:hover {
+  background-color: rgb(32, 103, 195); 
+  color: rgb(236, 239, 245); 
+}
+
+/* cela me permet de mettre en surbrillance le lien de la page actuelle avec la couleur de texte appropriée */
+#activepage {
+  background-color: rgb(32, 103, 195); 
+  border: 1px solid rgb(32, 103, 195);
+  display: block;
+  width: 129px; 
+  padding: 12px; 
+  font-size: 14px;
+  color: rgb(236, 239, 245) !important; /* le texte gardait la couleur indiquée sur l'ID "pages li" aulieu du blanc, j'ai donc utilisé le tag !important */
+}
+
+#backgroundmusic {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#galery {
+  position: absolute;
+}
+
+/* placement et espacement entre les images de la page Usages.html et les images/gifs de la pages des caractéristiques */
+#galery img {
+  float: left;
+  width: 300px; 
+  height: 220px; 
+  margin: 20px; 
+  border-radius: 15px;
+}
+
+#wankelsound {
+  float: left;
+  top: 10px;
+  right: 10px;
+}
+
+#pistonsound {
+  float: right;
+  top: 10px;
+  right: 10px;
+}
+
+/* placement d'une image plus longue, j'ai donc mis l'image en dehors de la galerie avec un nouvel id pour spécifier des paramètres différents */
+#vueeclatee {
+    position: absolute;
+    width: 450px;
+    height: 220px;
+    bottom: 97px;
+    left: 392px;
+    border-radius: 15px;
+}
+
+#couch {
+  position: absolute;
+  bottom: 80px;
+  right: 60px;
+  width: 350px;
+  height: 350px;
+}
+
+#table {
+  position: absolute;
+  bottom: 50px;        
+  right: 350px;
+  width: 250px;
+  height: 250px;
+}
+
+#fireplace {
+  position: absolute;
+  bottom: 100px;        
+  left: 200px;
+  width: 400px;
+  height: 400px;
+}
+
+#galerymentions img {
+  float: left;
+  width: 130px; 
+  height: 130px; 
+  margin: 25px; 
+}
+
+#wankelvideos {
+  position: absolute;
+  float: left;
+  top: 100px;
+  left: 20px;  
+}
+
+#pistonsvideos {
+  position: absolute;
+  float: right;
+  top: 100px;
+  right: 20px;
+}
+
