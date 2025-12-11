@@ -1,0 +1,5 @@
+
+url: "https://shibe32.github.io/SAMW/"
+
+plugins:
+  - jekyll-sitemap
