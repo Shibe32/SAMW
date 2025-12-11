@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://shibe32.github.io/SAMW/sitemap.xml
