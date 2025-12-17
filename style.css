@@ -40,7 +40,7 @@ body {
 
 /* arrière plan et police du contenu principal (texture de tissu) */
 #main {
-  background-image: url(images/background.png); 
+  background-image: url(images/background.jpg); 
   position: relative;
   background-size: 1130px 1700px; 
   background-position: right, bottom, left top;
@@ -53,7 +53,7 @@ body {
 
 /* arrière plan et police du contenu principal de la page Accueil et des mentions qui ne nécéssitent pas une grande page */
 #mainsmall {
-  background-image: url(images/background.png); 
+  background-image: url(images/background.jpg); 
   position: relative;
   background-size: 1130px 1600px; 
   background-position: right, bottom, left top;
@@ -66,7 +66,7 @@ body {
 
 /* arrière plan et police du contenu principal de la page Caracteristiques plus longue */
 #mainlong {
-  background-image: url(images/background.png); 
+  background-image: url(images/background.jpg); 
   position: relative;
   background-size: 1130px 1800px; 
   background-position: right, bottom, left top;
@@ -230,6 +230,7 @@ body {
   top: 100px;
   right: 20px;
 }
+
 
 
 
